@@ -15,7 +15,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SelfSignedCertSubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

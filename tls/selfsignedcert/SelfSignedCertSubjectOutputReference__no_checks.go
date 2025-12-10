@@ -43,11 +43,11 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

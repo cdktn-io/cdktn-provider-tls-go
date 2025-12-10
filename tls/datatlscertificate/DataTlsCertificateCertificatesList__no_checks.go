@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataTlsCertificateCertificatesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificateCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataTlsCertificateCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
