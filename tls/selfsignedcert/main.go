@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCert",
 		reflect.TypeOf((*SelfSignedCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -100,15 +100,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig",
 		reflect.TypeOf((*SelfSignedCertConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject",
 		reflect.TypeOf((*SelfSignedCertSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList",
 		reflect.TypeOf((*SelfSignedCertSubjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -130,7 +130,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
 		reflect.TypeOf((*SelfSignedCertSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},

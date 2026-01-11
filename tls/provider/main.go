@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		reflect.TypeOf((*TlsProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -47,11 +47,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.provider.TlsProviderConfig",
+		"@cdktn/provider-tls.provider.TlsProviderConfig",
 		reflect.TypeOf((*TlsProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.provider.TlsProviderProxy",
+		"@cdktn/provider-tls.provider.TlsProviderProxy",
 		reflect.TypeOf((*TlsProviderProxy)(nil)).Elem(),
 	)
 }

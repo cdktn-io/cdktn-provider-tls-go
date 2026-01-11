@@ -5,9 +5,9 @@ package selfsignedcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/selfsignedcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewSelfSignedCertSubjectList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_SelfSignedCertSubjectList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewSelfSignedCertSubjectList_Override(s SelfSignedCertSubjectList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

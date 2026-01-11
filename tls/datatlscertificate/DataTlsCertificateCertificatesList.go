@@ -5,9 +5,9 @@ package datatlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/datatlscertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/datatlscertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -112,7 +112,7 @@ func NewDataTlsCertificateCertificatesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataTlsCertificateCertificatesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,7 +124,7 @@ func NewDataTlsCertificateCertificatesList_Override(d DataTlsCertificateCertific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

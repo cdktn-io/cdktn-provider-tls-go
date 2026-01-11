@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
+		"@cdktn/provider-tls.locallySignedCert.LocallySignedCert",
 		reflect.TypeOf((*LocallySignedCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig",
+		"@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig",
 		reflect.TypeOf((*LocallySignedCertConfig)(nil)).Elem(),
 	)
 }

@@ -5,9 +5,9 @@ package certrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/certrequest/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/certrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -399,7 +399,7 @@ func NewCertRequestSubjectOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_CertRequestSubjectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
+		"@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -411,7 +411,7 @@ func NewCertRequestSubjectOutputReference_Override(c CertRequestSubjectOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
+		"@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

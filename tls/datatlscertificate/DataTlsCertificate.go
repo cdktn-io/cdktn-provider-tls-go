@@ -5,10 +5,10 @@ package datatlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/datatlscertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/datatlscertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -345,7 +345,7 @@ func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataT
 	j := jsiiProxy_DataTlsCertificate{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -358,7 +358,7 @@ func NewDataTlsCertificate_Override(d DataTlsCertificate, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -453,7 +453,7 @@ func DataTlsCertificate_GenerateConfigForImport(scope constructs.Construct, impo
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -488,7 +488,7 @@ func DataTlsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func DataTlsCertificate_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DataTlsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func DataTlsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"tfResourceType",
 		&returns,
 	)

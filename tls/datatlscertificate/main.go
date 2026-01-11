@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		reflect.TypeOf((*DataTlsCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificates",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificates",
 		reflect.TypeOf((*DataTlsCertificateCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
 		reflect.TypeOf((*DataTlsCertificateCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
 		reflect.TypeOf((*DataTlsCertificateCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certPem", GoGetter: "CertPem"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateConfig",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateConfig",
 		reflect.TypeOf((*DataTlsCertificateConfig)(nil)).Elem(),
 	)
 }

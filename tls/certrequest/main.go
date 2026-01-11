@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		reflect.TypeOf((*CertRequest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.certRequest.CertRequestConfig",
+		"@cdktn/provider-tls.certRequest.CertRequestConfig",
 		reflect.TypeOf((*CertRequestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.certRequest.CertRequestSubject",
+		"@cdktn/provider-tls.certRequest.CertRequestSubject",
 		reflect.TypeOf((*CertRequestSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.certRequest.CertRequestSubjectList",
+		"@cdktn/provider-tls.certRequest.CertRequestSubjectList",
 		reflect.TypeOf((*CertRequestSubjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
+		"@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference",
 		reflect.TypeOf((*CertRequestSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},

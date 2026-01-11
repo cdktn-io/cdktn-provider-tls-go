@@ -5,10 +5,10 @@ package privatekey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/privatekey/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/privatekey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -455,7 +455,7 @@ func NewPrivateKey(scope constructs.Construct, id *string, config *PrivateKeyCon
 	j := jsiiProxy_PrivateKey{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -468,7 +468,7 @@ func NewPrivateKey_Override(p PrivateKey, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -585,7 +585,7 @@ func PrivateKey_GenerateConfigForImport(scope constructs.Construct, importToId *
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -620,7 +620,7 @@ func PrivateKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func PrivateKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func PrivateKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func PrivateKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		"tfResourceType",
 		&returns,
 	)

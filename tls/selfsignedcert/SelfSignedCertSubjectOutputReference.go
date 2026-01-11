@@ -5,9 +5,9 @@ package selfsignedcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/selfsignedcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -399,7 +399,7 @@ func NewSelfSignedCertSubjectOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SelfSignedCertSubjectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -411,7 +411,7 @@ func NewSelfSignedCertSubjectOutputReference_Override(s SelfSignedCertSubjectOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
+		"@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

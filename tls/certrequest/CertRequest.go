@@ -5,10 +5,10 @@ package certrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/certrequest/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/certrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -448,7 +448,7 @@ func NewCertRequest(scope constructs.Construct, id *string, config *CertRequestC
 	j := jsiiProxy_CertRequest{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCertRequest_Override(c CertRequest, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -589,7 +589,7 @@ func CertRequest_GenerateConfigForImport(scope constructs.Construct, importToId 
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -624,7 +624,7 @@ func CertRequest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func CertRequest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +662,7 @@ func CertRequest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func CertRequest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-tls.certRequest.CertRequest",
+		"@cdktn/provider-tls.certRequest.CertRequest",
 		"tfResourceType",
 		&returns,
 	)

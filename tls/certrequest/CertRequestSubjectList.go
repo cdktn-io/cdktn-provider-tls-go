@@ -5,9 +5,9 @@ package certrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/certrequest/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/certrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,7 +124,7 @@ func NewCertRequestSubjectList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_CertRequestSubjectList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.certRequest.CertRequestSubjectList",
+		"@cdktn/provider-tls.certRequest.CertRequestSubjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -136,7 +136,7 @@ func NewCertRequestSubjectList_Override(c CertRequestSubjectList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.certRequest.CertRequestSubjectList",
+		"@cdktn/provider-tls.certRequest.CertRequestSubjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

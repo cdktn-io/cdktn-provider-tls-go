@@ -5,10 +5,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -220,7 +220,7 @@ func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderC
 	j := jsiiProxy_TlsProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -233,7 +233,7 @@ func NewTlsProvider_Override(t TlsProvider, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -268,7 +268,7 @@ func TlsProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -303,7 +303,7 @@ func TlsProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -322,7 +322,7 @@ func TlsProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -341,7 +341,7 @@ func TlsProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -354,7 +354,7 @@ func TlsProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"tfResourceType",
 		&returns,
 	)

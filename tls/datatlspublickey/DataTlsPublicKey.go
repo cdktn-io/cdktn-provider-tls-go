@@ -5,10 +5,10 @@ package datatlspublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-tls-go/tls/v11/datatlspublickey/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/datatlspublickey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -365,7 +365,7 @@ func NewDataTlsPublicKey(scope constructs.Construct, id *string, config *DataTls
 	j := jsiiProxy_DataTlsPublicKey{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewDataTlsPublicKey_Override(d DataTlsPublicKey, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -462,7 +462,7 @@ func DataTlsPublicKey_GenerateConfigForImport(scope constructs.Construct, import
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -497,7 +497,7 @@ func DataTlsPublicKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataTlsPublicKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataTlsPublicKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"tfResourceType",
 		&returns,
 	)

@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.privateKey.PrivateKey",
+		"@cdktn/provider-tls.privateKey.PrivateKey",
 		reflect.TypeOf((*PrivateKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -79,7 +79,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.privateKey.PrivateKeyConfig",
+		"@cdktn/provider-tls.privateKey.PrivateKeyConfig",
 		reflect.TypeOf((*PrivateKeyConfig)(nil)).Elem(),
 	)
 }
