@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package selfsignedcert
@@ -50,6 +50,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isCaCertificateInput", GoGetter: "IsCaCertificateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keyAlgorithm", GoGetter: "KeyAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "maxPathLength", GoGetter: "MaxPathLength"},
+			_jsii_.MemberProperty{JsiiProperty: "maxPathLengthInput", GoGetter: "MaxPathLengthInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEarlyRenewalHours", GoMethod: "ResetEarlyRenewalHours"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpAddresses", GoMethod: "ResetIpAddresses"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsCaCertificate", GoMethod: "ResetIsCaCertificate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxPathLength", GoMethod: "ResetMaxPathLength"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSetAuthorityKeyId", GoMethod: "ResetSetAuthorityKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSetSubjectKeyId", GoMethod: "ResetSetSubjectKeyId"},

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datatlscertificate
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate tls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate tls_certificate}.
 type DataTlsCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataTlsCertificate) VerifyChainInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate tls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate tls_certificate} Data Source.
 func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataTlsCertificateConfig) DataTlsCertificate {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate tls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate tls_certificate} Data Source.
 func NewDataTlsCertificate_Override(d DataTlsCertificate, scope constructs.Construct, id *string, config *DataTlsCertificateConfig) {
 	_init_.Initialize()
 

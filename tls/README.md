@@ -1,6 +1,6 @@
-# CDKTF Go bindings for hashicorp/tls provider version 4.1.0
+# CDKTF Go bindings for hashicorp/tls provider version 4.2.1
 
-This repo builds and publishes the [Terraform tls provider](https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform tls provider](https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform tls provider version 1:1. 
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf) - Last official release
-* [Terraform tls provider](https://registry.terraform.io/providers/hashicorp/tls/4.1.0)
+* [Terraform tls provider](https://registry.terraform.io/providers/hashicorp/tls/4.2.1)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

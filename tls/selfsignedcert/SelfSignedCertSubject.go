@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package selfsignedcert
@@ -7,43 +7,43 @@ package selfsignedcert
 type SelfSignedCertSubject struct {
 	// Distinguished name: `CN`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#common_name SelfSignedCert#common_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#common_name SelfSignedCert#common_name}
 	CommonName *string `field:"optional" json:"commonName" yaml:"commonName"`
 	// Distinguished name: `C`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#country SelfSignedCert#country}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#country SelfSignedCert#country}
 	Country *string `field:"optional" json:"country" yaml:"country"`
 	// ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#email_address SelfSignedCert#email_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#email_address SelfSignedCert#email_address}
 	EmailAddress *string `field:"optional" json:"emailAddress" yaml:"emailAddress"`
 	// Distinguished name: `L`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#locality SelfSignedCert#locality}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#locality SelfSignedCert#locality}
 	Locality *string `field:"optional" json:"locality" yaml:"locality"`
 	// Distinguished name: `O`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#organization SelfSignedCert#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#organization SelfSignedCert#organization}
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 	// Distinguished name: `OU`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#organizational_unit SelfSignedCert#organizational_unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#organizational_unit SelfSignedCert#organizational_unit}
 	OrganizationalUnit *string `field:"optional" json:"organizationalUnit" yaml:"organizationalUnit"`
 	// Distinguished name: `PC`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#postal_code SelfSignedCert#postal_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#postal_code SelfSignedCert#postal_code}
 	PostalCode *string `field:"optional" json:"postalCode" yaml:"postalCode"`
 	// Distinguished name: `ST`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#province SelfSignedCert#province}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#province SelfSignedCert#province}
 	Province *string `field:"optional" json:"province" yaml:"province"`
 	// Distinguished name: `SERIALNUMBER`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#serial_number SelfSignedCert#serial_number}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#serial_number SelfSignedCert#serial_number}
 	SerialNumber *string `field:"optional" json:"serialNumber" yaml:"serialNumber"`
 	// Distinguished name: `STREET`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert#street_address SelfSignedCert#street_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#street_address SelfSignedCert#street_address}
 	StreetAddress *[]*string `field:"optional" json:"streetAddress" yaml:"streetAddress"`
 }
 

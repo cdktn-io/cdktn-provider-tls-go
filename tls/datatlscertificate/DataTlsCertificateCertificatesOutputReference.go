@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datatlscertificate
@@ -35,6 +35,7 @@ type DataTlsCertificateCertificatesOutputReference interface {
 	SetInternalValue(val *DataTlsCertificateCertificates)
 	IsCa() cdktf.IResolvable
 	Issuer() *string
+	MaxPathLength() *float64
 	NotAfter() *string
 	NotBefore() *string
 	PublicKeyAlgorithm() *string
@@ -165,6 +166,16 @@ func (j *jsiiProxy_DataTlsCertificateCertificatesOutputReference) Issuer() *stri
 	_jsii_.Get(
 		j,
 		"issuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTlsCertificateCertificatesOutputReference) MaxPathLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxPathLength",
 		&returns,
 	)
 	return returns

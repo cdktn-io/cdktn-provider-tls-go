@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datatlscertificate
@@ -114,6 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isCa", GoGetter: "IsCa"},
 			_jsii_.MemberProperty{JsiiProperty: "issuer", GoGetter: "Issuer"},
+			_jsii_.MemberProperty{JsiiProperty: "maxPathLength", GoGetter: "MaxPathLength"},
 			_jsii_.MemberProperty{JsiiProperty: "notAfter", GoGetter: "NotAfter"},
 			_jsii_.MemberProperty{JsiiProperty: "notBefore", GoGetter: "NotBefore"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyAlgorithm", GoGetter: "PublicKeyAlgorithm"},

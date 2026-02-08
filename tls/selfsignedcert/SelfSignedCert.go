@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package selfsignedcert
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert tls_self_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert tls_self_signed_cert}.
 type SelfSignedCert interface {
 	cdktf.TerraformResource
 	AllowedUses() *[]*string
@@ -61,6 +61,9 @@ type SelfSignedCert interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxPathLength() *float64
+	SetMaxPathLength(val *float64)
+	MaxPathLengthInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	PrivateKeyPem() *string
@@ -147,6 +150,7 @@ type SelfSignedCert interface {
 	ResetEarlyRenewalHours()
 	ResetIpAddresses()
 	ResetIsCaCertificate()
+	ResetMaxPathLength()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -392,6 +396,26 @@ func (j *jsiiProxy_SelfSignedCert) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_SelfSignedCert) MaxPathLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxPathLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SelfSignedCert) MaxPathLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxPathLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SelfSignedCert) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -613,7 +637,7 @@ func (j *jsiiProxy_SelfSignedCert) ValidityStartTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSignedCertConfig) SelfSignedCert {
 	_init_.Initialize()
 
@@ -631,7 +655,7 @@ func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSigne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert_Override(s SelfSignedCert, scope constructs.Construct, id *string, config *SelfSignedCertConfig) {
 	_init_.Initialize()
 
@@ -742,6 +766,17 @@ func (j *jsiiProxy_SelfSignedCert)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SelfSignedCert)SetMaxPathLength(val *float64) {
+	if err := j.validateSetMaxPathLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxPathLength",
 		val,
 	)
 }
@@ -1212,6 +1247,14 @@ func (s *jsiiProxy_SelfSignedCert) ResetIsCaCertificate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIsCaCertificate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SelfSignedCert) ResetMaxPathLength() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMaxPathLength",
 		nil, // no parameters
 	)
 }
