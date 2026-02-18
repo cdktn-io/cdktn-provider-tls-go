@@ -15,7 +15,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SelfSignedCertSubjectList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SelfSignedCertSubjectList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewSelfSignedCertSubjectListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSelfSignedCertSubjectListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

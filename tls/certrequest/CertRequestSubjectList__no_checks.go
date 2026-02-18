@@ -15,7 +15,7 @@ func (c *jsiiProxy_CertRequestSubjectList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (c *jsiiProxy_CertRequestSubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertRequestSubjectList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_CertRequestSubjectList) validateSetTerraformAttributeParamete
 	return nil
 }
 
-func (j *jsiiProxy_CertRequestSubjectList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertRequestSubjectList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_CertRequestSubjectList) validateSetWrapsSetParameters(val *bo
 	return nil
 }
 
-func validateNewCertRequestSubjectListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCertRequestSubjectListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

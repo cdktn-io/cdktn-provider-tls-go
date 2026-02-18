@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataTlsCertificate) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataTlsCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

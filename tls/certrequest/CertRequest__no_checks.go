@@ -111,7 +111,7 @@ func (j *jsiiProxy_CertRequest) validateSetIpAddressesParameters(val *[]*string)
 	return nil
 }
 
-func (j *jsiiProxy_CertRequest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CertRequest) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

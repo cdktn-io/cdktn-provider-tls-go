@@ -5,16 +5,16 @@ package locallysignedcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/locallysignedcert/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/locally_signed_cert tls_locally_signed_cert}.
 type LocallySignedCert interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AllowedUses() *[]*string
 	SetAllowedUses(val *[]*string)
 	AllowedUsesInput() *[]*string
@@ -26,7 +26,7 @@ type LocallySignedCert interface {
 	SetCaPrivateKeyPem(val *string)
 	CaPrivateKeyPemInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CertPem() *string
 	CertRequestPem() *string
 	SetCertRequestPem(val *string)
@@ -49,9 +49,9 @@ type LocallySignedCert interface {
 	SetEarlyRenewalHours(val *float64)
 	EarlyRenewalHoursInput() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -61,30 +61,30 @@ type LocallySignedCert interface {
 	SetIsCaCertificate(val interface{})
 	IsCaCertificateInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxPathLength() *float64
 	SetMaxPathLength(val *float64)
 	MaxPathLengthInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ReadyForRenewal() cdktf.IResolvable
+	ReadyForRenewal() cdktn.IResolvable
 	SetSubjectKeyId() interface{}
 	SetSetSubjectKeyId(val interface{})
 	SetSubjectKeyIdInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -102,7 +102,7 @@ type LocallySignedCert interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -120,9 +120,9 @@ type LocallySignedCert interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -159,7 +159,7 @@ type LocallySignedCert interface {
 
 // The jsii proxy struct for LocallySignedCert
 type jsiiProxy_LocallySignedCert struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_LocallySignedCert) AllowedUses() *[]*string {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_LocallySignedCert) CaPrivateKeyPemInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LocallySignedCert) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_LocallySignedCert) EarlyRenewalHoursInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LocallySignedCert) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_LocallySignedCert) IsCaCertificateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LocallySignedCert) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_LocallySignedCert) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LocallySignedCert) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_LocallySignedCert) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) ReadyForRenewal() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_LocallySignedCert) ReadyForRenewal() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"readyForRenewal",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_LocallySignedCert) SetSubjectKeyIdInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LocallySignedCert) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -677,7 +677,7 @@ func (j *jsiiProxy_LocallySignedCert)SetEarlyRenewalHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LocallySignedCert)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -696,7 +696,7 @@ func (j *jsiiProxy_LocallySignedCert)SetIsCaCertificate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LocallySignedCert)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +718,7 @@ func (j *jsiiProxy_LocallySignedCert)SetMaxPathLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LocallySignedCert)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -759,14 +759,14 @@ func (j *jsiiProxy_LocallySignedCert)SetValidityPeriodHours(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>".
-func LocallySignedCert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LocallySignedCert resource upon running "cdktn plan <stack-name>".
+func LocallySignedCert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLocallySignedCert_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
 		"@cdktn/provider-tls.locallySignedCert.LocallySignedCert",
@@ -900,11 +900,11 @@ func (l *jsiiProxy_LocallySignedCert) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LocallySignedCert) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1041,7 +1041,7 @@ func (l *jsiiProxy_LocallySignedCert) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LocallySignedCert) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1052,11 +1052,11 @@ func (l *jsiiProxy_LocallySignedCert) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (l *jsiiProxy_LocallySignedCert) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LocallySignedCert) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,

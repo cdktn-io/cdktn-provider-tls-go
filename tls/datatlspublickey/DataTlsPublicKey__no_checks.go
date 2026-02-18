@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataTlsPublicKey) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsPublicKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataTlsPublicKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -47,7 +47,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -107,11 +107,11 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSelfSignedCertSubjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSelfSignedCertSubjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 
