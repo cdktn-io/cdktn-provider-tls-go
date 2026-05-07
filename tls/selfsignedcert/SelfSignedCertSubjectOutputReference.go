@@ -5,9 +5,9 @@ package selfsignedcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/selfsignedcert/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/selfsignedcert/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

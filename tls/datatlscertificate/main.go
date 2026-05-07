@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyChain", GoGetter: "VerifyChain"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyChainInput", GoGetter: "VerifyChainInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTlsCertificate{}

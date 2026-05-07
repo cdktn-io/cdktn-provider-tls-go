@@ -95,6 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validityPeriodHours", GoGetter: "ValidityPeriodHours"},
 			_jsii_.MemberProperty{JsiiProperty: "validityPeriodHoursInput", GoGetter: "ValidityPeriodHoursInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validityStartTime", GoGetter: "ValidityStartTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SelfSignedCert{}
