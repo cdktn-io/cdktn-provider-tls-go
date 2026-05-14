@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs tls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs tls}.
 type TlsProvider interface {
 	cdktn.TerraformProvider
 	Alias() *string
@@ -219,7 +219,7 @@ func (j *jsiiProxy_TlsProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs tls} Resource.
 func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderConfig) TlsProvider {
 	_init_.Initialize()
 
@@ -237,7 +237,7 @@ func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs tls} Resource.
 func NewTlsProvider_Override(t TlsProvider, scope constructs.Construct, id *string, config *TlsProviderConfig) {
 	_init_.Initialize()
 

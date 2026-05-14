@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request tls_cert_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request}.
 type CertRequest interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_CertRequest) UrisInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request tls_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request} Resource.
 func NewCertRequest(scope constructs.Construct, id *string, config *CertRequestConfig) CertRequest {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewCertRequest(scope constructs.Construct, id *string, config *CertRequestC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request tls_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request} Resource.
 func NewCertRequest_Override(c CertRequest, scope constructs.Construct, id *string, config *CertRequestConfig) {
 	_init_.Initialize()
 
