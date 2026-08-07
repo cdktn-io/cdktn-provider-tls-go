@@ -1,7 +1,7 @@
 // Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
-package privatekey
+package ephemeraltlsprivatekey
 
 import (
 	"reflect"
@@ -11,15 +11,13 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktn/provider-tls.privateKey.PrivateKey",
-		reflect.TypeOf((*PrivateKey)(nil)).Elem(),
+		"@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKey",
+		reflect.TypeOf((*EphemeralTlsPrivateKey)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmInput", GoGetter: "AlgorithmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -37,22 +35,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
-			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
-			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyOpenssh", GoGetter: "PrivateKeyOpenssh"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyPem", GoGetter: "PrivateKeyPem"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyPemPkcs8", GoGetter: "PrivateKeyPemPkcs8"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyFingerprintMd5", GoGetter: "PublicKeyFingerprintMd5"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyFingerprintSha256", GoGetter: "PublicKeyFingerprintSha256"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyOpenssh", GoGetter: "PublicKeyOpenssh"},
@@ -76,13 +66,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
-			j := jsiiProxy_PrivateKey{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
+			j := jsiiProxy_EphemeralTlsPrivateKey{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformEphemeralResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-tls.privateKey.PrivateKeyConfig",
-		reflect.TypeOf((*PrivateKeyConfig)(nil)).Elem(),
+		"@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKeyConfig",
+		reflect.TypeOf((*EphemeralTlsPrivateKeyConfig)(nil)).Elem(),
 	)
 }

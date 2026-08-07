@@ -59,6 +59,10 @@ func (s *jsiiProxy_SelfSignedCert) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SelfSignedCert) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SelfSignedCert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SelfSignedCert) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_SelfSignedCert) validatePutSubjectParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SelfSignedCert) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package datatlscertificate
+package ephemeraltlsprivatekey
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-func (d *jsiiProxy_DataTlsCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateAddOverrideParameters(path *strin
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetAnyMapAttributeParameters(terr
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetBooleanAttributeParameters(ter
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetBooleanMapAttributeParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetListAttributeParameters(terraf
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetNumberAttributeParameters(terr
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetNumberListAttributeParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetNumberMapAttributeParameters(t
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetStringAttributeParameters(terr
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateInterpolationForAttributeParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -114,7 +114,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataTlsCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+func (e *jsiiProxy_EphemeralTlsPrivateKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	if feature == "" {
 		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
@@ -122,23 +122,7 @@ func (d *jsiiProxy_DataTlsCertificate) validateRegisterProviderFeatureUsageParam
 	return nil
 }
 
-func validateDataTlsCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
-	if scope == nil {
-		return fmt.Errorf("parameter scope is required, but nil was provided")
-	}
-
-	if importToId == nil {
-		return fmt.Errorf("parameter importToId is required, but nil was provided")
-	}
-
-	if importFromId == nil {
-		return fmt.Errorf("parameter importFromId is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateDataTlsCertificate_IsConstructParameters(x interface{}) error {
+func validateEphemeralTlsPrivateKey_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +130,7 @@ func validateDataTlsCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataTlsCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+func validateEphemeralTlsPrivateKey_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +138,7 @@ func validateDataTlsCertificate_IsTerraformDataSourceParameters(x interface{}) e
 	return nil
 }
 
-func validateDataTlsCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateEphemeralTlsPrivateKey_IsTerraformEphemeralResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +146,7 @@ func validateDataTlsCertificate_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificate) validateSetContentParameters(val *string) error {
+func (j *jsiiProxy_EphemeralTlsPrivateKey) validateSetAlgorithmParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -170,7 +154,7 @@ func (j *jsiiProxy_DataTlsCertificate) validateSetContentParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EphemeralTlsPrivateKey) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -227,7 +211,15 @@ func (j *jsiiProxy_DataTlsCertificate) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EphemeralTlsPrivateKey) validateSetEcdsaCurveParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EphemeralTlsPrivateKey) validateSetLifecycleParameters(val *cdktn.TerraformEphemeralResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -235,7 +227,7 @@ func (j *jsiiProxy_DataTlsCertificate) validateSetLifecycleParameters(val *cdktn
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificate) validateSetUrlParameters(val *string) error {
+func (j *jsiiProxy_EphemeralTlsPrivateKey) validateSetRsaBitsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,27 +235,7 @@ func (j *jsiiProxy_DataTlsCertificate) validateSetUrlParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsCertificate) validateSetVerifyChainParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktn.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func validateNewDataTlsCertificateParameters(scope constructs.Construct, id *string, config *DataTlsCertificateConfig) error {
+func validateNewEphemeralTlsPrivateKeyParameters(scope constructs.Construct, id *string, config *EphemeralTlsPrivateKeyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
@@ -272,6 +244,9 @@ func validateNewDataTlsCertificateParameters(scope constructs.Construct, id *str
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}
