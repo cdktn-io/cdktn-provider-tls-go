@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/self_signed_cert tls_self_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert tls_self_signed_cert}.
 type SelfSignedCert interface {
 	cdktn.TerraformResource
 	AllowedUses() *[]*string
@@ -69,6 +69,14 @@ type SelfSignedCert interface {
 	PrivateKeyPem() *string
 	SetPrivateKeyPem(val *string)
 	PrivateKeyPemInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	PrivateKeyPemWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetPrivateKeyPemWo(val *string)
+	PrivateKeyPemWoInput() *string
+	PrivateKeyPemWoVersion() *float64
+	SetPrivateKeyPemWoVersion(val *float64)
+	PrivateKeyPemWoVersionInput() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -203,6 +211,9 @@ type SelfSignedCert interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateKeyPem()
+	ResetPrivateKeyPemWo()
+	ResetPrivateKeyPemWoVersion()
 	ResetSetAuthorityKeyId()
 	ResetSetSubjectKeyId()
 	ResetSubject()
@@ -504,6 +515,46 @@ func (j *jsiiProxy_SelfSignedCert) PrivateKeyPemInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SelfSignedCert) PrivateKeyPemWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPemWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SelfSignedCert) PrivateKeyPemWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPemWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SelfSignedCert) PrivateKeyPemWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyPemWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SelfSignedCert) PrivateKeyPemWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyPemWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SelfSignedCert) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -695,7 +746,7 @@ func (j *jsiiProxy_SelfSignedCert) ValidityStartTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSignedCertConfig) SelfSignedCert {
 	_init_.Initialize()
 
@@ -713,7 +764,7 @@ func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSigne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert_Override(s SelfSignedCert, scope constructs.Construct, id *string, config *SelfSignedCertConfig) {
 	_init_.Initialize()
 
@@ -846,6 +897,28 @@ func (j *jsiiProxy_SelfSignedCert)SetPrivateKeyPem(val *string) {
 	_jsii_.Set(
 		j,
 		"privateKeyPem",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SelfSignedCert)SetPrivateKeyPemWo(val *string) {
+	if err := j.validateSetPrivateKeyPemWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyPemWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SelfSignedCert)SetPrivateKeyPemWoVersion(val *float64) {
+	if err := j.validateSetPrivateKeyPemWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyPemWoVersion",
 		val,
 	)
 }
@@ -1348,6 +1421,30 @@ func (s *jsiiProxy_SelfSignedCert) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SelfSignedCert) ResetPrivateKeyPem() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrivateKeyPem",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SelfSignedCert) ResetPrivateKeyPemWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrivateKeyPemWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SelfSignedCert) ResetPrivateKeyPemWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrivateKeyPemWoVersion",
 		nil, // no parameters
 	)
 }

@@ -416,6 +416,22 @@ func (j *jsiiProxy_CertRequest) validateSetPrivateKeyPemParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_CertRequest) validateSetPrivateKeyPemWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CertRequest) validateSetPrivateKeyPemWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CertRequest) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -479,9 +495,6 @@ func validateNewCertRequestParameters(scope constructs.Construct, id *string, co
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

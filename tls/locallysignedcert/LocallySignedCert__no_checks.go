@@ -111,6 +111,14 @@ func (j *jsiiProxy_LocallySignedCert) validateSetCaPrivateKeyPemParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LocallySignedCert) validateSetCaPrivateKeyPemWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LocallySignedCert) validateSetCaPrivateKeyPemWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocallySignedCert) validateSetCertRequestPemParameters(val *string) error {
 	return nil
 }

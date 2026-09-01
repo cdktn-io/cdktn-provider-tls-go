@@ -127,6 +127,14 @@ func (j *jsiiProxy_CertRequest) validateSetPrivateKeyPemParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_CertRequest) validateSetPrivateKeyPemWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertRequest) validateSetPrivateKeyPemWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertRequest) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -22,25 +22,35 @@ type CertRequestConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
-	PrivateKeyPem *string `field:"required" json:"privateKeyPem" yaml:"privateKeyPem"`
 	// List of DNS names for which a certificate is being requested (i.e. certificate subjects).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#dns_names CertRequest#dns_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#dns_names CertRequest#dns_names}
 	DnsNames *[]*string `field:"optional" json:"dnsNames" yaml:"dnsNames"`
 	// List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
 	IpAddresses *[]*string `field:"optional" json:"ipAddresses" yaml:"ipAddresses"`
+	// Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
+	PrivateKeyPem *string `field:"optional" json:"privateKeyPem" yaml:"privateKeyPem"`
+	// Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem_wo CertRequest#private_key_pem_wo}
+	PrivateKeyPemWo *string `field:"optional" json:"privateKeyPemWo" yaml:"privateKeyPemWo"`
+	// The version of the `private_key_pem_wo` write-only private key.
+	//
+	// Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate request to be re-issued when rotating the key.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem_wo_version CertRequest#private_key_pem_wo_version}
+	PrivateKeyPemWoVersion *float64 `field:"optional" json:"privateKeyPemWoVersion" yaml:"privateKeyPemWoVersion"`
 	// subject block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#subject CertRequest#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#subject CertRequest#subject}
 	Subject interface{} `field:"optional" json:"subject" yaml:"subject"`
 	// List of URIs for which a certificate is being requested (i.e. certificate subjects).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#uris CertRequest#uris}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#uris CertRequest#uris}
 	Uris *[]*string `field:"optional" json:"uris" yaml:"uris"`
 }
 

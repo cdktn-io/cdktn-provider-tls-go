@@ -143,6 +143,14 @@ func (j *jsiiProxy_SelfSignedCert) validateSetPrivateKeyPemParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SelfSignedCert) validateSetPrivateKeyPemWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SelfSignedCert) validateSetPrivateKeyPemWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SelfSignedCert) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

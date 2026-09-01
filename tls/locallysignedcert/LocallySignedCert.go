@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert tls_locally_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert tls_locally_signed_cert}.
 type LocallySignedCert interface {
 	cdktn.TerraformResource
 	AllowedUses() *[]*string
@@ -25,6 +25,14 @@ type LocallySignedCert interface {
 	CaPrivateKeyPem() *string
 	SetCaPrivateKeyPem(val *string)
 	CaPrivateKeyPemInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	CaPrivateKeyPemWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetCaPrivateKeyPemWo(val *string)
+	CaPrivateKeyPemWoInput() *string
+	CaPrivateKeyPemWoVersion() *float64
+	SetCaPrivateKeyPemWoVersion(val *float64)
+	CaPrivateKeyPemWoVersionInput() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	CertPem() *string
@@ -186,6 +194,9 @@ type LocallySignedCert interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetCaPrivateKeyPem()
+	ResetCaPrivateKeyPemWo()
+	ResetCaPrivateKeyPemWoVersion()
 	ResetEarlyRenewalHours()
 	ResetIsCaCertificate()
 	ResetMaxPathLength()
@@ -285,6 +296,46 @@ func (j *jsiiProxy_LocallySignedCert) CaPrivateKeyPemInput() *string {
 	_jsii_.Get(
 		j,
 		"caPrivateKeyPemInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LocallySignedCert) CaPrivateKeyPemWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caPrivateKeyPemWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LocallySignedCert) CaPrivateKeyPemWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caPrivateKeyPemWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LocallySignedCert) CaPrivateKeyPemWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"caPrivateKeyPemWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LocallySignedCert) CaPrivateKeyPemWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"caPrivateKeyPemWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -621,7 +672,7 @@ func (j *jsiiProxy_LocallySignedCert) ValidityStartTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource.
 func NewLocallySignedCert(scope constructs.Construct, id *string, config *LocallySignedCertConfig) LocallySignedCert {
 	_init_.Initialize()
 
@@ -639,7 +690,7 @@ func NewLocallySignedCert(scope constructs.Construct, id *string, config *Locall
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource.
 func NewLocallySignedCert_Override(l LocallySignedCert, scope constructs.Construct, id *string, config *LocallySignedCertConfig) {
 	_init_.Initialize()
 
@@ -679,6 +730,28 @@ func (j *jsiiProxy_LocallySignedCert)SetCaPrivateKeyPem(val *string) {
 	_jsii_.Set(
 		j,
 		"caPrivateKeyPem",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LocallySignedCert)SetCaPrivateKeyPemWo(val *string) {
+	if err := j.validateSetCaPrivateKeyPemWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caPrivateKeyPemWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LocallySignedCert)SetCaPrivateKeyPemWoVersion(val *float64) {
+	if err := j.validateSetCaPrivateKeyPemWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caPrivateKeyPemWoVersion",
 		val,
 	)
 }
@@ -1194,6 +1267,30 @@ func (l *jsiiProxy_LocallySignedCert) RegisterProviderFeatureUsage(feature cdktn
 		l,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (l *jsiiProxy_LocallySignedCert) ResetCaPrivateKeyPem() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCaPrivateKeyPem",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LocallySignedCert) ResetCaPrivateKeyPemWo() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCaPrivateKeyPemWo",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LocallySignedCert) ResetCaPrivateKeyPemWoVersion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCaPrivateKeyPemWoVersion",
+		nil, // no parameters
 	)
 }
 

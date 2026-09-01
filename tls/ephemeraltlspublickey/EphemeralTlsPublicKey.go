@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/public_key tls_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/public_key tls_public_key}.
 type EphemeralTlsPublicKey interface {
 	cdktn.TerraformEphemeralResource
 	Algorithm() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_EphemeralTlsPublicKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
 func NewEphemeralTlsPublicKey(scope constructs.Construct, id *string, config *EphemeralTlsPublicKeyConfig) EphemeralTlsPublicKey {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewEphemeralTlsPublicKey(scope constructs.Construct, id *string, config *Ep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
 func NewEphemeralTlsPublicKey_Override(e EphemeralTlsPublicKey, scope constructs.Construct, id *string, config *EphemeralTlsPublicKeyConfig) {
 	_init_.Initialize()
 

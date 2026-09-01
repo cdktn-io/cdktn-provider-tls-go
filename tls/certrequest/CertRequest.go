@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request tls_cert_request}.
 type CertRequest interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -57,6 +57,14 @@ type CertRequest interface {
 	PrivateKeyPem() *string
 	SetPrivateKeyPem(val *string)
 	PrivateKeyPemInput() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	PrivateKeyPemWo() *string
+	// Deprecated: Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+	SetPrivateKeyPemWo(val *string)
+	PrivateKeyPemWoInput() *string
+	PrivateKeyPemWoVersion() *float64
+	SetPrivateKeyPemWoVersion(val *float64)
+	PrivateKeyPemWoVersionInput() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -176,6 +184,9 @@ type CertRequest interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateKeyPem()
+	ResetPrivateKeyPemWo()
+	ResetPrivateKeyPemWoVersion()
 	ResetSubject()
 	ResetUris()
 	SynthesizeAttributes() *map[string]interface{}
@@ -395,6 +406,46 @@ func (j *jsiiProxy_CertRequest) PrivateKeyPemInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CertRequest) PrivateKeyPemWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPemWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertRequest) PrivateKeyPemWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPemWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertRequest) PrivateKeyPemWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyPemWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertRequest) PrivateKeyPemWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyPemWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertRequest) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -496,7 +547,7 @@ func (j *jsiiProxy_CertRequest) UrisInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request tls_cert_request} Resource.
 func NewCertRequest(scope constructs.Construct, id *string, config *CertRequestConfig) CertRequest {
 	_init_.Initialize()
 
@@ -514,7 +565,7 @@ func NewCertRequest(scope constructs.Construct, id *string, config *CertRequestC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request tls_cert_request} Resource.
 func NewCertRequest_Override(c CertRequest, scope constructs.Construct, id *string, config *CertRequestConfig) {
 	_init_.Initialize()
 
@@ -603,6 +654,28 @@ func (j *jsiiProxy_CertRequest)SetPrivateKeyPem(val *string) {
 	_jsii_.Set(
 		j,
 		"privateKeyPem",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertRequest)SetPrivateKeyPemWo(val *string) {
+	if err := j.validateSetPrivateKeyPemWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyPemWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertRequest)SetPrivateKeyPemWoVersion(val *float64) {
+	if err := j.validateSetPrivateKeyPemWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyPemWoVersion",
 		val,
 	)
 }
@@ -1048,6 +1121,30 @@ func (c *jsiiProxy_CertRequest) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertRequest) ResetPrivateKeyPem() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateKeyPem",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertRequest) ResetPrivateKeyPemWo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateKeyPemWo",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertRequest) ResetPrivateKeyPemWoVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateKeyPemWoVersion",
 		nil, // no parameters
 	)
 }
