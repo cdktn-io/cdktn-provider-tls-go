@@ -5,14 +5,14 @@ package datatlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlscertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlscertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/certificate tls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/certificate tls_certificate}.
 type DataTlsCertificate interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataTlsCertificate) VerifyChainInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/certificate tls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/certificate tls_certificate} Data Source.
 func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataTlsCertificateConfig) DataTlsCertificate {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/certificate tls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/certificate tls_certificate} Data Source.
 func NewDataTlsCertificate_Override(d DataTlsCertificate, scope constructs.Construct, id *string, config *DataTlsCertificateConfig) {
 	_init_.Initialize()
 

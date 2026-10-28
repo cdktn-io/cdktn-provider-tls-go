@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/provider/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/provider/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs tls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs tls}.
 type TlsProvider interface {
 	cdktn.TerraformProvider
 	Alias() *string
@@ -232,7 +232,7 @@ func (j *jsiiProxy_TlsProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs tls} Resource.
 func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderConfig) TlsProvider {
 	_init_.Initialize()
 
@@ -250,7 +250,7 @@ func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs tls} Resource.
 func NewTlsProvider_Override(t TlsProvider, scope constructs.Construct, id *string, config *TlsProviderConfig) {
 	_init_.Initialize()
 

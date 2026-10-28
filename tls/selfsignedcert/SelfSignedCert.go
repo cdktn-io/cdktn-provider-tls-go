@@ -5,14 +5,14 @@ package selfsignedcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/selfsignedcert/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/selfsignedcert/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert tls_self_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/self_signed_cert tls_self_signed_cert}.
 type SelfSignedCert interface {
 	cdktn.TerraformResource
 	AllowedUses() *[]*string
@@ -746,7 +746,7 @@ func (j *jsiiProxy_SelfSignedCert) ValidityStartTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSignedCertConfig) SelfSignedCert {
 	_init_.Initialize()
 
@@ -764,7 +764,7 @@ func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSigne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert_Override(s SelfSignedCert, scope constructs.Construct, id *string, config *SelfSignedCertConfig) {
 	_init_.Initialize()
 

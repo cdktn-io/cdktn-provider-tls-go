@@ -5,14 +5,14 @@ package ephemeraltlspublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlspublickey/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/public_key tls_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/public_key tls_public_key}.
 type EphemeralTlsPublicKey interface {
 	cdktn.TerraformEphemeralResource
 	Algorithm() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_EphemeralTlsPublicKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
 func NewEphemeralTlsPublicKey(scope constructs.Construct, id *string, config *EphemeralTlsPublicKeyConfig) EphemeralTlsPublicKey {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewEphemeralTlsPublicKey(scope constructs.Construct, id *string, config *Ep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/public_key tls_public_key} Ephemeral Resource.
 func NewEphemeralTlsPublicKey_Override(e EphemeralTlsPublicKey, scope constructs.Construct, id *string, config *EphemeralTlsPublicKeyConfig) {
 	_init_.Initialize()
 

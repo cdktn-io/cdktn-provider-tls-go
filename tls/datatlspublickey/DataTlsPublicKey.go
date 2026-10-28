@@ -5,14 +5,14 @@ package datatlspublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key tls_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key tls_public_key}.
 type DataTlsPublicKey interface {
 	cdktn.TerraformDataSource
 	Algorithm() *string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataTlsPublicKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key tls_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key tls_public_key} Data Source.
 func NewDataTlsPublicKey(scope constructs.Construct, id *string, config *DataTlsPublicKeyConfig) DataTlsPublicKey {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewDataTlsPublicKey(scope constructs.Construct, id *string, config *DataTls
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key tls_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key tls_public_key} Data Source.
 func NewDataTlsPublicKey_Override(d DataTlsPublicKey, scope constructs.Construct, id *string, config *DataTlsPublicKeyConfig) {
 	_init_.Initialize()
 

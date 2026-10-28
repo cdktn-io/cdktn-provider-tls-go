@@ -5,9 +5,9 @@ package certrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

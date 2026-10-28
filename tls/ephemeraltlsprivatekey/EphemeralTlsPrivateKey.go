@@ -5,14 +5,14 @@ package ephemeraltlsprivatekey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlsprivatekey/internal"
+	"github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlsprivatekey/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key tls_private_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key tls_private_key}.
 type EphemeralTlsPrivateKey interface {
 	cdktn.TerraformEphemeralResource
 	Algorithm() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_EphemeralTlsPrivateKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key tls_private_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key tls_private_key} Ephemeral Resource.
 func NewEphemeralTlsPrivateKey(scope constructs.Construct, id *string, config *EphemeralTlsPrivateKeyConfig) EphemeralTlsPrivateKey {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewEphemeralTlsPrivateKey(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key tls_private_key} Ephemeral Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key tls_private_key} Ephemeral Resource.
 func NewEphemeralTlsPrivateKey_Override(e EphemeralTlsPrivateKey, scope constructs.Construct, id *string, config *EphemeralTlsPrivateKeyConfig) {
 	_init_.Initialize()
 
